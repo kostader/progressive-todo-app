@@ -15,9 +15,8 @@ export const AppContainer = styled.div`
 `;
 
 export const ColumnContainer = styled.div`
-  align-items: flex-start;
   background-color: #ebecf0;
-  min-height: 300px;
+  min-height: 40px;
   border-radius: 3px;
   margin-right: 20px;
   padding: 8px 8px;
@@ -72,6 +71,7 @@ export const NewItemButton = styled.button`
   color: #fff;
   padding: 6px 12px;
   text-align: center;
+  cursor: pointer;
 `;
 
 export const NewItemInput = styled.input`

@@ -1,9 +1,12 @@
 import React from "react";
-import ReactDOM from "react-dom/client";
+import ReactDOM from "react-dom";
 import "./index.css";
 import { App } from "./App";
+import { AppStateProvider } from "./state/AppStateContext";
 
-const root = ReactDOM.createRoot(
+ReactDOM.render(
+  <AppStateProvider>
+    <App />
+  </AppStateProvider>,
   document.getElementById("root") as HTMLElement
 );
-root.render(<App />);
